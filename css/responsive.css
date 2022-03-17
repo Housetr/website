@@ -1,0 +1,89 @@
+@media screen and (max-width: 768px) {
+  .feedbackWraper.quote-column.w-row {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  #mobile {
+    display: block;
+  }
+  #desktop {
+    display: none;
+  }
+  .title {
+    line-height: 1.5rem;
+    margin: 23px 0px;
+    font-size: 23px;
+    text-align: justify;
+  }
+
+  .paragraph-button {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+  }
+  i#mobile {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 200px !important;
+  }
+  .logo img {
+    width: 100%;
+  }
+  img#catImg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .contactUs h1 {
+    padding: 3px 10px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+      transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+      -webkit-transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-family: Graphik, sans-serif;
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .aboutWraper {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .w-layout-grid.client-logos img {
+    width: 25%;
+  }
+  .heading-3 {
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-family: Larsseit, sans-serif;
+    font-size: 26px;
+  }
+
+  .main-button {
+    margin-bottom: 12px;
+  }
+
+  .paragraph-size-16 {
+    text-align: justify;
+  }
+  section#footer {
+    text-align: center;
+  }
+
+  p.section-description {
+    text-align: justify;
+    margin: 10px;
+  }
+}
