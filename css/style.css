@@ -5,6 +5,10 @@
   display: block;
 }
 
+.watchVideo{
+  cursor: pointer;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 24px;
