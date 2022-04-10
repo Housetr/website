@@ -138,11 +138,11 @@
 
             </div>
 
-            <div class="videoSection">
+            <div class="videoSection" style="position:relative;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12 singleVideo">
-                             <a target="_blank" href="https://www.youtube.com/watch?v=2UyT6c2oPX8">
+                             <a target="_blank" href="https://www.youtube.com/watch?v=2UyT6c2oPX8" onclick="playVideo('./gallery/video1.mp4')">
                             <p class="watchVideo">Watch Video</p>
                             <img src="./gallery/WSG.jpg " alt="">
                            
@@ -150,7 +150,7 @@
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 singleVideo">
-                             <a target="_blank" href="https://www.youtube.com/watch?v=7JqiiDEfSIc">
+                             <a target="_blank" href="https://www.youtube.com/watch?v=7JqiiDEfSIc" onclick="playVideo('./gallery/video2.mp4')">
                             <p class="watchVideo">Watch Video</p>
                             <img src="./gallery/VLK.jpg " alt="">
                            
@@ -158,7 +158,7 @@
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 singleVideo">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=x_y6HpKt_-w">
+                                <a target="_blank" href="https://www.youtube.com/watch?v=x_y6HpKt_-w" onclick="playVideo('./gallery/video3.mp4')">
                             <p class="watchVideo">Watch Video</p>
                             <img src="./gallery/MIMIR.jpg" alt="">
                         
@@ -167,7 +167,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-sm-12 singleVideo">
-                              <a target="_blank" href="https://www.youtube.com/watch?v=VFMY4del5w0">
+                              <a target="_blank" href="https://www.youtube.com/watch?v=VFMY4del5w0" onclick="playVideo('./gallery/video4.mp4')">
                             <p class="watchVideo">Watch Video</p>
                             <img src="./gallery/FLAME.jpg" alt="">
                           
@@ -175,7 +175,7 @@
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 singleVideo">
-                             <a target="_blank" href="https://www.youtube.com/watch?v=ANU9FdF9mcQ">
+                             <a target="_blank" href="https://www.youtube.com/watch?v=ANU9FdF9mcQ" onclick="playVideo('./gallery/video5.mp4')">
                             <p class="watchVideo">Watch Video</p>
                             <img src="./gallery/PART.jpg" alt="">
 
@@ -184,7 +184,7 @@
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 singleVideo">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=GpKIEuqOBVE">
+                                <a target="_blank" href="https://www.youtube.com/watch?v=GpKIEuqOBVE" onclick="playVideo('./gallery/video6.mp4')">
                             <p class="watchVideo">Watch Video</p>
                             <img src="./gallery/BLS.jpg" alt="">
                         
@@ -193,6 +193,35 @@
                            
 
                         </div>
+                        
+<!-- popup video added -->
+                        <div class="popup" style="position:absolute;top: 0;left: 0;width: 100vw;height: 100vh;display: flex;justify-content: center;align-items: center;display: none;">
+        
+  <div class="video" style="position:relative;">
+      <video id="player" muted controls src="./media/Wall.mp4"></video>
+      <div class="closebtn" style="position: absolute;top: 0;right: 0; padding: 10px; border: 1px solid tomato; cursor: pointer;color: white;" onclick="closeVideo()">
+          X
+      </div>
+  </div>
+       
+    </div>
+                        
+                        <script>
+    const player = document.querySelector("#player");
+    const popup = document.querySelector(".popup");
+
+    function playvideo(srcs){
+      popup.style.display="flex";
+        player.setAttribute("src", `${srcs}`)
+
+
+    }
+
+    function closeVideo(){
+        popup.style.display="none";
+        player.removeAttribute("src");
+    }
+</script>
 
                     </div>
 
