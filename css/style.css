@@ -370,13 +370,13 @@ a.link-block {
   margin-right: -10px;
 }
 
-video#player {
-    width: 100%;
-}
-
 .reviewImg {
   display: flex;
   gap: 20px;
+}
+
+video#player {
+    width: 100%;
 }
 .reviewImg img {
   border-radius: 100%;
