@@ -86,4 +86,8 @@
     text-align: justify;
     margin: 10px;
   }
+  
+  p.watchVideo {
+    display: block;
+}
 }
